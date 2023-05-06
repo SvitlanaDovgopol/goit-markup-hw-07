@@ -1,0 +1,172 @@
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2e2f42;
+    --secondary-slate: #8e8f99;
+    --primary-blue-color: #4d5ae5;
+    --accent-color: #18a0fb;
+    --pressed-color: #404bbf;
+    --primary-white-color: #ffffff;
+    --secondary-white-color: #f4f4fd;
+    --icons-green-hover: #31d0aa;
+  
+    --header-color: #e7e9fc;
+    --modal-window: #fcfcfc;
+  
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Body*/
+body {
+    background-color: var(--primary-white-color);
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+    letter-spacing: 0.02em;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @media screen and (min-width: 428px) {
+      width: 428px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+  
+    @media screen and (min-width: 1140px) {
+      width: 1140px;
+    }
+  } 
+
+
+
+ /*Header section*/
+
+ .header {
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid var(--header-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header .container {
+  padding-top: 25.5px;
+  padding-bottom: 23.5px ;
+}
+
+.logo-black {
+  color: var(--title-text-color);
+}
+
+.logo.link {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-blue-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hero.section {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 448px;
+  height: 442px;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  color: var(--primary-white-color);
+  text-align: center;
+}
+
+.hero-title {
+  margin: 0px 54px 72px 54px;
+  padding-top: 112px;
+
+  display: inline-block;
+  max-width: 496px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.01;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-white-color);
+}
+
+.hero-button {
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: block;
+  align-items: center;
+  height: 56px;
+  min-width: 169px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--primary-white-color);
+
+  background-color: var(--primary-blue-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--cubic);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--pressed-color);
+}
+
+
+.values.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
