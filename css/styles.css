@@ -78,6 +78,11 @@ img {
 @media only screen and (min-width: 768px) {
   .container {
     width: 768px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -356,8 +361,12 @@ img {
   overflow: hidden;
 }
 
+/*Mob styles*/
+
 @media screen and (min-width: 428px) {
   .values.section {
+    display: flex;
+
     padding-top: 96px;
     padding-bottom: 96px;
   }
@@ -368,6 +377,7 @@ img {
 
   .values.item {
     display: block;
+    flex-wrap: wrap;
   }
 
   .values.item:not(:last-child) {
@@ -391,14 +401,55 @@ img {
   }
 }
 
-/*@media screen and (min-width: 768px) {
-  width: 768px;
+/*Tablet styles*/
+@media screen and (min-width: 768px) {
+  .values.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .thumb {
+    display: none;
+  }
+
+  .values.list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .values.item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .values.item {
+    margin-bottom: 0px;
+  }
+
+  .title {
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  .values-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
-@media screen and (min-width: 1140px) {
+/*@media screen and (min-width: 1140px) {
   width: 1140px;
-}
-*/
+}*/
 
 /*- -Our services--*/
 
@@ -468,6 +519,7 @@ img {
   fill: var(--secondary-white-color);
 }
 
+/*- -Mobile styles--*/
 @media screen and (min-width: 428px) {
   .team.section {
     padding-top: 96px;
@@ -504,6 +556,36 @@ img {
 
   .team-item:not(:last-child) {
     margin-bottom: 72px;
+  }
+}
+
+/*- -Tablet styles--*/
+@media screen and (min-width: 768px) {
+  .container.team {
+    width: 768px;
+  }
+
+  .team.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .team.list {
+    display: flex;
+    flex-wrap: wrap;
+
+    row-gap: 64px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-item {
+    margin-bottom: 0;
+    height: 468px;
   }
 }
 
