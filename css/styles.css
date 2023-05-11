@@ -170,10 +170,6 @@ header {
   text-decoration: none;
 }
 
-/* Mob styles*/
-@media screen and (min-width: 428px) {
-}
-
 /* Tablet styles*/
 @media screen and (min-width: 768px) {
   .header .container {
@@ -244,7 +240,7 @@ header {
     border-radius: 2px;
   }
 
-  .site-nav-item {
+  .site-nav .item {
     position: relative;
   }
 
@@ -255,19 +251,15 @@ header {
   .auth-nav .list {
   }
 
-  .auth-nav-item {
-    margin-right: 0;
-  }
-
-  .auth-nav.list {
-    display: inline-block;
+  .auth-nav .link {
+    display: block;
   }
 
   .auth-nav .list .item:not(:last-child) {
     margin-bottom: 8px;
   }
 
-  .auth-nav-link {
+  .auth-nav .list .link {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
