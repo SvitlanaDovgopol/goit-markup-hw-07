@@ -919,8 +919,12 @@ img {
     margin-right: auto;
   }
   .team-item {
-    margin-bottom: 0;
     height: 428px;
+    align-items: center;
+    margin-bottom: 0;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
