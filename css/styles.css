@@ -180,6 +180,10 @@ header {
 
     transition: fill 250ms var(--cubic), background-color 250ms var(--cubic);
   }
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    fill: var(--primary-white-color);
+  }
 
   .js-open-menu {
     width: 44px;
@@ -193,12 +197,6 @@ header {
   .menu-toggle {
     display: none;
   }
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  fill: var(--primary-white-color);
-  background-color: var(--pressed-color);
 }
 
 .menu-container {
@@ -432,6 +430,9 @@ header {
 
 /*Desktop*/
 @media screen and (min-width: 1158px) {
+  .container.main-nav {
+    max-width: 1158px;
+  }
   .main-nav {
     margin-right: auto;
   }
@@ -442,6 +443,7 @@ header {
 
   .auth-nav .list {
     display: flex;
+    height: 72px;
   }
 
   .auth-nav .link {
@@ -459,6 +461,13 @@ header {
     margin-right: 40px;
   }
 
+  .auth-nav .link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    display: block;
+  }
+
   .auth-nav .list .link {
     font-size: 16px;
   }
@@ -467,7 +476,8 @@ header {
 /*Hero section*/
 
 .hero.section {
-  padding: 0;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin-left: auto;
   margin-right: auto;
 
@@ -584,26 +594,6 @@ header {
 }
 
 /*
-.hero {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero/mob-hero@1x.webp);
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero/mob-hero@2x.webp);
-  }
-}
-
 /*Tablet*/
 @media screen and (min-width: 768px) {
   .hero.section {
@@ -635,6 +625,9 @@ header {
 /*Desktop*/
 @media screen and (min-width: 1158px) {
   .hero.section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+
     height: 600px;
     max-width: 1440px;
 
@@ -664,10 +657,6 @@ header {
 .hero {
   color: var(--primary-white-color);
   text-align: center;
-}
-
-.overlay {
-  height: 432px;
 }
 
 .hero-title {
@@ -709,9 +698,6 @@ header {
 }
 
 .hero-title {
-  padding-top: 112px;
-  margin-bottom: 72px;
-
   display: inline-block;
   max-width: 320px;
 
@@ -724,9 +710,6 @@ header {
 @media only screen and (min-width: 768px) {
   .hero.section {
     max-width: 768px;
-    height: 436px;
-  }
-  .overlay {
     height: 436px;
   }
 
@@ -747,13 +730,8 @@ header {
     height: 600px;
   }
 
-  .overlay {
-    height: 600px;
-  }
-
   .hero-title {
     margin: 0px 0px 48px 0px;
-    padding-top: 188px;
 
     max-width: 496px;
     line-height: 1.07;
@@ -795,7 +773,7 @@ header {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .values.item:not(:last-child) {
     margin-bottom: 72px;
   }
@@ -829,6 +807,7 @@ header {
 
   .values.item {
     width: calc((100% - 24px) / 2);
+    margin-bottom: 0px;
   }
 
   .title {
@@ -845,6 +824,7 @@ header {
 
   .container.values {
     padding: 0;
+    max-width: 1168px;
   }
 
   .section .title {
@@ -884,6 +864,7 @@ header {
 
   .values.item {
     width: calc((100% - 72px) / 4);
+    margin-bottom: 0px;
   }
 
   .button-icon {
@@ -909,6 +890,9 @@ header {
   .services.section {
     display: inline;
     padding-bottom: 120px;
+  }
+  .container.services {
+    max-width: 1158px;
   }
 
   .section-title {
@@ -948,7 +932,6 @@ header {
 }
 
 .team.section {
-  max-width: 767px;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -987,8 +970,10 @@ header {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.team-item:not(:last-child) {
-  margin-bottom: 72px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 .team-wrapper {
@@ -1066,9 +1051,12 @@ header {
 /*Desktop*/
 @media screen and (min-width: 1158px) {
   .team.section {
-    max-width: 1600px;
     margin-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .container.team {
+    max-width: 1158px;
   }
 
   .team-item {
@@ -1163,12 +1151,18 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 760px;
+  }
   .customers.list {
     column-gap: 24px;
+
+    justify-content: center;
   }
 
   .customers-item {
     width: calc((100% - 48px) / 3);
+    max-width: 168px;
   }
 }
 /*Desktop*/
@@ -1179,6 +1173,9 @@ header {
     padding-bottom: 120px;
   }
 
+  .container.customers {
+    max-width: 1158px;
+  }
   .customers.list {
     justify-content: center;
     align-items: baseline;
@@ -1246,8 +1243,10 @@ header {
   margin-right: auto;
 }
 
-.footer-block {
-  margin-bottom: 72px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer-block {
+    margin-bottom: 72px;
+  }
 }
 
 .footer .logo.link {
@@ -1273,8 +1272,10 @@ header {
   text-align: center;
 }
 
-.footer .socials.list {
-  margin-bottom: 72px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer .socials.list {
+    margin-bottom: 72px;
+  }
 }
 
 /*Tablet*/
@@ -1284,7 +1285,11 @@ header {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
+
     max-width: 552px;
+  }
+  .footer-block {
+    margin-bottom: 72px;
   }
 
   .footer .logo.link {
@@ -1426,6 +1431,7 @@ header {
     width: 453px;
     display: flex;
     column-gap: 24px;
+    margin-bottom: 0px;
   }
 
   .subscribe-title {
@@ -1440,8 +1446,8 @@ header {
     color: var(--primary-white-color);
   }
   .subscribe-mail {
-    margin-bottom: 16px;
     padding-left: 16px;
+    margin-bottom: 0px;
 
     height: 40px;
     width: 264px;
