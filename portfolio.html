@@ -5,12 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
-    <style>
-      ul {
-        list-style-type: none;
-      }
-    </style>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +23,7 @@
     <header class="header">
       <div class="container header">
         <nav class="main-nav">
-          <a  class="logo link" href="./index.html">
+          <a class="logo link" href="./index.html">
             Web<span class="logo-black">Studio</span></a
           >
           <ul class="site-nav list">
@@ -37,7 +31,7 @@
               <a class="site-nav-link link" href="./index.html"> Studio</a>
             </li>
             <li class="item">
-              <a- class="site-nav-link current link" href="./portfolio.html">
+              <a class="site-nav-link current link" href="./portfolio.html">
                 Portfolio</a
               >
             </li>
@@ -50,12 +44,12 @@
         <address class="auth-nav">
           <ul class="auth-nav list">
             <li class="item">
-              <a  class="channel link" href="mailto:info@devstudio.com"
+              <a class="channel link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li class="item">
-              <a  class="channel link" href="tel:+110001111111"
+              <a class="channel link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -68,7 +62,7 @@
     <main>
       <!--Filter-->
       <section class="categories section">
-        <div class="container">
+        <div class="container categories">
           <h1 class="section-title visually-hidden">Categories</h1>
           <ul class="list-type">
             <li class="categories-items">
@@ -110,12 +104,65 @@
                 aria-label="app interface"
               >
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/banking-app-interface.jpg"
-                    alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-1@1x.webp 1x,
+                        ./images/gallery/port-desk-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-1@1x.jpg 1x,
+                        ./images/gallery/port-desk-1@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-1@1x.webp 1x,
+                        ./images/gallery/portf-tabl-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-1@1x.jpg 1x,
+                        ./images/gallery/portf-tabl-1@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-1@1x.webp 1x,
+                        ./images/gallery/port-mob-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-1@1x.jpg 1x,
+                        ./images/gallery/port-mob-1@1x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/gallery/port-mob-1@1x.jpg"
+                      alt="Banking App Interface Concept"
+                      loading="lazy"
+                    />
+                  </picture>
+
                   <div class="portfolio-overlay">
                     <p class="portfolio-label">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -141,12 +188,64 @@
                 aria-label="cashless payment"
               >
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/cashless-payment.jpg"
-                    alt="Cashless Payment"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-2@1x.webp 1x,
+                        ./images/gallery/port-desk-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-2@1x.jpg 1x,
+                        ./images/gallery/port-desk-2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-2@1x.webp 1x,
+                        ./images/gallery/portf-tabl-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-2@1x.jpg 1x,
+                        ./images/gallery/portf-tabl-2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-2@1x.webp 1x,
+                        ./images/gallery/port-mob-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-2@1x.jpg 1x,
+                        ./images/gallery/port-mob-2@1x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/gallery/port-mob-2@1x.jpg"
+                      alt="Cashless Payment"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-label">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -165,18 +264,70 @@
             <li class="portfolio-item">
               <a
                 class="portfolio-link link"
-                href=""                
+                href=""
                 target="_blank"
                 rel="noreferref noopener"
                 aria-label="meditation app"
               >
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/meditation-app.jpg"
-                    alt="Meditation App"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-3@1x.webp 1x,
+                        ./images/gallery/port-desk-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-3@1x.jpg 1x,
+                        ./images/gallery/port-desk-3@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-3@1x.webp 1x,
+                        ./images/gallery/portf-tabl-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-3@1x.jpg 1x,
+                        ./images/gallery/portf-tabl-3@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-3@1x.webp 1x,
+                        ./images/gallery/port-mob-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-3@1x.jpg 1x,
+                        ./images/gallery/port-mob-3@1x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/gallery/port-mob-3@1x.jpg"
+                      alt="Meditation App"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-label">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -196,18 +347,70 @@
             <li class="portfolio-item">
               <a
                 class="portfolio-link link"
-                href=""                
+                href=""
                 target="_blank"
                 rel="noreferref noopener"
                 aria-label="taxi service"
               >
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/taxi-service.jpg"
-                    alt="Taxi Service"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-4@1x.webp 1x,
+                        ./images/gallery/port-desk-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-4@1x.jpg 1x,
+                        ./images/gallery/port-desk-4@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-4@1x.webp 1x,
+                        ./images/gallery/portf-tabl-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-4@1x.jpg 1x,
+                        ./images/gallery/portf-tabl-4@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-4@1x.webp 1x,
+                        ./images/gallery/port-mob-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-4@1x.jpg 1x,
+                        ./images/gallery/port-mob-4@1x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/gallery/port-mob-4@1x.jpg"
+                      alt="Taxi Service"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-label">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -232,12 +435,64 @@
                 aria-label="screen illustrations"
               >
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/screen-illustration.jpg"
-                    alt="Screen Illustrations"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-5@1x.webp 1x,
+                        ./images/gallery/port-desk-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-5@1x.jpg 1x,
+                        ./images/gallery/port-desk-5@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-5@1x.webp 1x,
+                        ./images/gallery/portf-tabl-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-5@1x.jpg 1x,
+                        ./images/gallery/portf-tabl-5@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-5@1x.webp 1x,
+                        ./images/gallery/port-mob-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-5@1x.jpg 1x,
+                        ./images/gallery/port-mob-5@1x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/gallery/port-mob-5@1x.jpg"
+                      alt="Screen Illustrations"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-label">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -257,18 +512,70 @@
             <li class="portfolio-item">
               <a
                 class="portfolio-link link"
-                href=""                
+                href=""
                 target="_blank"
                 rel="noreferref noopener"
                 aria-label="online courses"
               >
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/online-courses.jpg"
-                    alt="Online Courses"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-6@1x.webp 1x,
+                        ./images/gallery/port-desk-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-6@1x.jpg 1x,
+                        ./images/gallery/port-desk-6@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-6@1x.webp 1x,
+                        ./images/gallery/portf-tabl-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-6@1x.jpg 1x,
+                        ./images/gallery/portf-tabl-6@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-6@1x.webp 1x,
+                        ./images/gallery/port-mob-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-6@1x.jpg 1x,
+                        ./images/gallery/port-mob-6@1x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/gallery/port-mob-6@1x.jpg"
+                      alt="Online Courses"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-label">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -294,12 +601,64 @@
                 aria-label="instagram stories"
               >
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/instagram-stories.jpg"
-                    alt="Instagram Stories Concept"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-7@1x.webp 1x,
+                        ./images/gallery/port-desk-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-7@1x.jpg 1x,
+                        ./images/gallery/port-desk-7@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-7@1x.webp 1x,
+                        ./images/gallery/portf-tabl-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-7@1x.jpg 1x,
+                        ./images/gallery/portf-tabl-7@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-7@1x.webp 1x,
+                        ./images/gallery/port-mob-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-7@1x.jpg 1x,
+                        ./images/gallery/port-mob-7@1x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/gallery/port-mob-7@1x.jpg"
+                      alt="Instagram Stories Concept"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-label">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -325,12 +684,64 @@
                 aria-label="organic food"
               >
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/organic-food.jpg"
-                    alt="Organic Food"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-8@1x.webp 1x,
+                        ./images/gallery/port-desk-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-8@1x.jpg 1x,
+                        ./images/gallery/port-desk-8@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-8@1x.webp 1x,
+                        ./images/gallery/portf-tabl-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-8@1x.jpg 1x,
+                        ./images/gallery/portf-tabl-8@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-8@1x.webp 1x,
+                        ./images/gallery/port-mob-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-8@1x.jpg 1x,
+                        ./images/gallery/port-mob-8@1x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/gallery/port-mob-8@1x.jpg"
+                      alt="Organic Food"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-label">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -350,18 +761,70 @@
             <li class="portfolio-item">
               <a
                 class="portfolio-link link"
-                href=""                
+                href=""
                 target="_blank"
                 rel="noreferref noopener"
                 aria-label="fresh coffee"
               >
                 <div class="portfolio-thumb">
-                  <img
-                    src="./images/fresh-coffee.jpg"
-                    alt="Fresh Coffee"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-9@1x.webp 1x,
+                        ./images/gallery/port-desk-9@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery/port-desk-9@1x.jpg 1x,
+                        ./images/gallery/port-desk-9@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-9@1x.webp 1x,
+                        ./images/gallery/portf-tabl-9@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery/portf-tabl-9@1x.jpg 1x,
+                        ./images/gallery/portf-tabl-9@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-9@1x.webp 1x,
+                        ./images/gallery/port-mob-9@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery/port-mob-9@1x.jpg 1x,
+                        ./images/gallery/port-mob-9@1x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/port-mob-9@1x.jpg"
+                      alt="Fresh Coffee"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="portfolio-overlay">
                     <p class="portfolio-label">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -381,7 +844,7 @@
       </section>
     </main>
 
-<!--Footer section-->
+    <!--Footer section-->
     <footer class="footer section">
       <div class="container footer">
         <div class="footer-block">
