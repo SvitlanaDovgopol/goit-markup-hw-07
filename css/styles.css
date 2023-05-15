@@ -723,7 +723,7 @@ header {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .values.item:not(:last-child) {
     margin-bottom: 72px;
   }
@@ -915,10 +915,8 @@ header {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-@media screen and (max-width: 767px) {
-  .team-item:not(:last-child) {
-    margin-bottom: 72px;
-  }
+.team-item:not(:last-child) {
+  margin-bottom: 72px;
 }
 
 .team-wrapper {
@@ -1282,7 +1280,7 @@ header {
   display: block;
 }
 
-@media screen and (min-width: 428px) and (max-width: 767px) {
+@media screen and (min-width: 428px) {
   .footer-subscribe-form {
     width: 398px;
     margin-bottom: 0px;
